@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trade Your Courses</h1>
+        <p>Resolve the waiting cycle by trading courses with mutual benefit!</p>
+    </header>
+
+    <!-- Course Trading Interface -->
+    <main>
+        <section class="trade-section">
+            <h2>Select the Course You HAVE and the Courses You WANT</h2>
+
+            <!-- Dropdown for Courses You Have -->
+            <label for="course-have">Course You HAVE:</label>
+            <select id="course-have">
+                <option value="">-- Select a Course --</option>
+                <option value="Math 101">Math 101</option>
+                <option value="History 201">History 201</option>
+                <option value="Biology 105">Biology 105</option>
+                <option value="Economics 301">Economics 301</option>
+                <option value="Computer Science 101">Computer Science 101</option>
+            </select>
+
+            <!-- Multi-Select for Courses You WANT -->
+            <label for="course-want">Courses You WANT:</label>
+            <select id="course-want" multiple>
+                <option value="Math 101">Math 101</option>
+                <option value="History 201">History 201</option>
+                <option value="Biology 105">Biology 105</option>
+                <option value="Economics 301">Economics 301</option>
+                <option value="Computer Science 101">Computer Science 101</option>
+            </select>
+
+            <button id="trade-button">Find a Trade</button>
+        </section>
+
+        <!-- Output Section -->
+        <section class="results">
+            <h3>Trade Results:</h3>
+            <p id="result-message">Select your preferences and click "Find a Trade" to see matches.</p>
+        </section>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
